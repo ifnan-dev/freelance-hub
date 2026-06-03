@@ -56,8 +56,8 @@ const Jobs =()=>{
 
     return(
         <div className="flex flex-row">
-            {JobsData.map(({title,budjet,company,featured,remote,applied},index)=>(
-                featured? <JobCard title={title} budjet={budjet} company={company}   />
+            {JobsData.map(({id,title,budjet,company,featured,remote,applied},index)=>(
+                featured? <JobCard title={title} budjet={budjet} company={company} id={id} />
 :<></>
             ))}
         </div>
